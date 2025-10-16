@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, papel o tijera </title>
+    <script>
+        // 1 es piedra, 2 es papel, 3 es tijera
+        let jugador = 0
+        let pc = Math.floor(Math.random()*(3-1+1)+1)
+        jugador = prompt("Elije: 1 para piedra, 2 para papel, 3 para tijera")
+        if(jugador == 1) {
+            alert("Elegiste 🥌")
+        } else if(jugador ==2){
+            alert("Elegiste 📄")
+        } else if (jugador == 3) {
+            alert("Elegiste ✌")
+        } else {
+            alert("Escoge una opción válida")
+        }
+
+         if(pc == 1) {
+            alert("El pc eligió 🥌")
+        } else if(pc ==2){
+            alert("El pc eligió 📄")
+        } else if (pc == 3) {
+            alert("El pc eligió ✌")
+        }
+        
+        if(pc == jugador) {
+                alert("Empataron")
+        } else if (jugador == 1 && pc == 3) {
+            alert("El jugador ha ganado")
+        } else if (jugador == 2 && pc == 1) {
+            alert("El jugador ha ganado")
+        } else if (jugador == 3 && pc == 2) {
+            alert("El jugador ha ganado")
+        } else {
+            alert("El pc ha ganado")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
