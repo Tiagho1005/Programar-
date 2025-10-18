@@ -1,0 +1,74 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GATOMON</title>
+</head>
+
+<body>
+    <h1>GATOMON 🐈</h1>
+
+    <!-- mascotas -->
+    <section id="seleccionar-Mascota">
+
+        <h2>Elige tu gato de guerra</h2>
+
+        <label for="Gato fuego">Gato fuego</label>
+        <input type="radio" name="mascotas" id="Gato fuego">
+        <label for="Gato agua">Gato agua</label>
+        <input type="radio" name="mascotas" id="Gato agua">
+        <label for="Gato tierra">Gato tierra</label>
+        <input type="radio" name="mascotas" id="Gato tierra">
+        <label for="Gato volcán">Gato volcán</label>
+        <input type="radio" name="mascotas" id="Gato volcán">
+        <label for="Gato místico">Gato místico</label>
+        <input type="radio" name="mascotas" id="Gato místico">
+        <label for="Gato anciano">Gato anciano</label>
+        <input type="radio" name="mascotas" id="Gato anciano">
+
+        <!--
+        Gato fuego -> fuego
+        Gato Agua -> agua
+        Gato tierra -> tierra
+        Gato volcán -> fuego y tierra
+        Gato místico -> fuego y agua
+        Gato anciano -> tierra y agua 
+        -->
+
+        <button id="boton-mascota">Seleccionar</button>
+
+    </section>
+
+    <!-- ataques -->
+    <section id="seleccionar-Ataque">
+        <h2>Elige tu ataque</h2>
+
+        <p>Tu mascota tiene <span>3</span> vidas</p>
+        <p>La mascota del enemigo tiene <span>3</span>vidas</p>
+
+        <!-- botones -->
+        <P>
+            <button id="boton-fuego">GATO FUEGO🔥</button>
+            <button id="boton-agua">GATO AGUA🌊</button>
+            <button id="boton-tierra">GATO TIERRA🌱</button>
+        </P>
+
+    </section>
+
+    <!-- Notificaciones -->
+    <section id="mensajes">
+        <p>Tu mascota atacó con FUEGO, la mascota del enemigo atacó con TIERRA - GANASTE 🎉</p>
+        <p>Tu mascota atacó con AGUA, la mascota del enemigo atacó con FUEGO - GANASTE 🎉</p>
+        <p>Tu mascota atacó con TIERRA, la mascota del enemigo atacó con AGUA - GANASTE 🎉</p>
+    </section>
+
+    <!--Reinicio -->
+    <section id="reiniciar">
+        <button id="boton-reiniciar">Reiniciar juego</button>
+    </section>
+
+    <script src="codigogtm.js"></script>
+</body>
+
+</html>
